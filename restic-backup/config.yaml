@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Restic Backup
-version: "0.0.2"
+version: "0.0.3"
 slug: restic-backup
 description: Backup your HomeAssistant instance using Restic
 url: "https://github.com/jannickfahlbusch/ha-restic-backup"
@@ -21,8 +21,8 @@ map:
   - backup:ro
 options:
   respository:
-    location: null
-    password: null
+    location: ""
+    password: ""
   backup:
     host: "HomeAssistant"
     tag: "HomeAssistant"
@@ -31,7 +31,7 @@ schema:
     location: str
     password: password
   backup:
-    host: "str?"
-    tag: "str?"
+    host: str
+    tag: str
 
 image: "ghcr.io/jannickfahlbusch/{arch}-addon-restic-backup"
