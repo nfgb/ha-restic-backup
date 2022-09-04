@@ -1,5 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 0.0.5
+
+Suport changing the compression mode
+
 ## 0.0.4
 
 Fix Typo in Schema validation

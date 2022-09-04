@@ -4,9 +4,11 @@
 # s6-overlay docs: https://github.com/just-containers/s6-overlay
 # ==============================================================================
 
+export RESTIC_PASSWORD=$(bashio::config 'repository.password')
+export RESTIC_COMPRESSION=$(bashio::config 'backup.compression')
+
 ## Run your program
 restic backup --repo $(bashio::config 'repository.location') \
-    --password-command "bashio::config 'repository.password'" \
     --host $(bashio::config 'backup.host') \
     --tag $(bashio::config 'backup.tag') \
     /config /ssl /addons /media /share /backup
