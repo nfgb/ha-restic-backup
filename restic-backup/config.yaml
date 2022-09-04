@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Restic Backup
-version: "0.0.3"
+version: "0.0.4"
 slug: restic-backup
 description: Backup your HomeAssistant instance using Restic
 url: "https://github.com/jannickfahlbusch/ha-restic-backup"
@@ -20,7 +20,7 @@ map:
   - share:ro
   - backup:ro
 options:
-  respository:
+  repository:
     location: ""
     password: ""
   backup:
