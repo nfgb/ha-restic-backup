@@ -1,4 +1,15 @@
 configuration:
-  message:
-    name: Message
-    description: The message that will be printed to the log when starting this example add-on.
+  repository:
+    location:
+      name: Repository Location
+      description: Location of the Repository
+    password:
+      name: Repository Password
+      description: Password of the Repository
+  backup:
+    host:
+      name: Host
+      description: Host to specifiy as source for a snapshot
+    tag:
+      name: Tag(s)
+      description: One or more tag for the snapshot. Multiple tags must be seperated by a comma without intermediate whitespaces

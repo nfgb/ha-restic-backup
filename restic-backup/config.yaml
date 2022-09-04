@@ -5,11 +5,12 @@ slug: restic-backup
 description: Backup your HomeAssistant instance using Restic
 url: "https://github.com/jannickfahlbusch/ha-restic-backup"
 arch:
-  - armhf
-  - armv7
-  - aarch64
+  # ToDo: Reenable builds for other architectures. Restic publishes the same architectures with a different name
+  #- armhf
+  #- armv7
+  #- aarch64
   - amd64
-  - i386
+  #- i386
 init: false
 map:
   - config:ro
@@ -19,7 +20,18 @@ map:
   - share:ro
   - backup:ro
 options:
-  message: "Hello world..."
+  respository:
+    location: null
+    password: null
+  backup:
+    host: "HomeAssistant"
+    tag: "HomeAssistant"
 schema:
-  message: "str?"
+  repository:
+    location: str
+    password: password
+  backup:
+    host: "str?"
+    tag: "str?"
+
 image: "ghcr.io/jannickfahlbusch/{arch}-addon-restic-backup"
