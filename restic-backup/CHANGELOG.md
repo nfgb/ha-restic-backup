@@ -1,5 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 0.0.6 
+
+Rename running service and stop after first backup.
+
 ## 0.0.5
 
 Suport changing the compression mode
