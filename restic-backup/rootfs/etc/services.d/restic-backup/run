@@ -12,4 +12,4 @@ restic backup --repo $(bashio::config 'repository.location') \
     --host $(bashio::config 'backup.host') \
     --tag $(bashio::config 'backup.tag') \
     --exclude-caches \
-    /config /ssl /addons /media /share /backup
+    /config /ssl /addons /media /share
