@@ -1,5 +1,10 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 0.0.8
+
+* Exclude all caches with `--exclude-caches`
+* Don't mount backups anymore
+
 ## 0.0.7
 
 Make backup halt after first backup
