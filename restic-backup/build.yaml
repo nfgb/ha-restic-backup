@@ -12,4 +12,4 @@ labels:
   org.opencontainers.image.licenses: "Apache License 2.0"
 args:
   TEMPIO_VERSION: "2021.09.0"
-  RESTIC_VERSION: "0.15.1"
+  RESTIC_VERSION: "0.16.0"
